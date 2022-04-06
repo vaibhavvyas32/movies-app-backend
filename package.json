@@ -1,31 +1,28 @@
 {
-  "name": "movies-app",
+  "name": "movies-app-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15"
+  },
   "scripts": {
-    "start": "PORT=8000 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GenxTheGamer/movies-app.git"
+    "url": "git+https://github.com/vaibhavvyas32/movies-app-backend.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GenxTheGamer/movies-app/issues"
+    "url": "https://github.com/vaibhavvyas32/movies-app-backend/issues"
   },
-  "homepage": "https://github.com/GenxTheGamer/movies-app#readme",
-  "dependencies": {
-    "body-parser": "^1.19.1",
-    "bootstrap": "^5.1.3",
-    "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "mongoose": "^6.1.7",
-    "nodemon": "^2.0.15",
-    "styled-components": "^5.3.3"
-  }
+  "homepage": "https://github.com/vaibhavvyas32/movies-app-backend#readme"
 }

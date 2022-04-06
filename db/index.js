@@ -1,12 +1,10 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 mongoose
-  .connect(
-    "mongodb+srv://genx:1234@cluster0.0686p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-    }
-  )
+  .connect(process.env.CONNECT_LINK, {
+    useNewUrlParser: true,
+  })
   .catch((e) => {
     console.error("Connection Error", e.message);
   });
